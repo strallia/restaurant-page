@@ -1,6 +1,4 @@
-export default function () {
-  const div = document.querySelector('div#content');
-
+export default function (container) {
   class Person {
     constructor(name, title, descrip) {
       this.name = name;
@@ -26,14 +24,14 @@ export default function () {
   employees.forEach((person) => {
     const h1 = document.createElement('h1');
     h1.textContent = person.name;
-    div.appendChild(h1);
+    container.appendChild(h1);
 
     const title = document.createElement('h3');
     title.textContent = person.title;
-    div.appendChild(title);
+    container.appendChild(title);
 
     const descrip = document.createElement('p');
     descrip.textContent = person.descrip;
-    div.appendChild(descrip);
+    container.appendChild(descrip);
   });
 }

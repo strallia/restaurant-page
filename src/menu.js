@@ -1,17 +1,15 @@
 import Pasta from './pasta.png';
 
-export default function () {
-  const div = document.querySelector('div#content');
-
+export default function (container) {
   // Title
   const h1 = document.createElement('h1');
   h1.textContent = 'Menu';
-  div.appendChild(h1);
+  container.appendChild(h1);
 
   // Main Course
   const h3 = document.createElement('h3');
   h3.textContent = 'Main Course';
-  div.appendChild(h3);
+  container.appendChild(h3);
 
   // Food Item
   const itemDiv = document.createElement('div');
@@ -24,5 +22,5 @@ export default function () {
   itemDiv.appendChild(itemName);
   itemDiv.appendChild(itemDescrip);
   itemDiv.appendChild(itemImg);
-  div.appendChild(itemDiv);
+  container.appendChild(itemDiv);
 }
