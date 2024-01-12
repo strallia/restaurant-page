@@ -8,4 +8,3 @@ const container = document.querySelector('div#content');
 renderHome(container);
 renderMenu(container);
 renderContact(container);
-
