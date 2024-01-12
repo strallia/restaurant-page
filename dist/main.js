@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/homepage.js":
-/*!*************************!*\
-  !*** ./src/homepage.js ***!
-  \*************************/
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _icon_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./icon.png */ \"./src/icon.png\");\n\n\n/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__() {\n  const div = document.createElement('div');\n  const img = document.createElement('img');\n  const h1 = document.createElement('h1');\n  const para = document.createElement('p');\n  \n  img.src = _icon_png__WEBPACK_IMPORTED_MODULE_0__;\n  h1.textContent = 'Homepage';\n  para.textContent = 'some random text';\n\n  div.appendChild(img);\n  div.appendChild(h1);\n  div.appendChild(para);\n  return div;\n};\n\n//# sourceURL=webpack://restaurant-page/./src/homepage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _icon_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./icon.png */ \"./src/icon.png\");\n\n\n/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__() {\n  const div = document.querySelector('div#content');\n  const img = document.createElement('img');\n  const h1 = document.createElement('h1');\n  const para = document.createElement('p');\n  \n  img.src = _icon_png__WEBPACK_IMPORTED_MODULE_0__;\n  h1.textContent = 'Home';\n  para.textContent = 'some random text';\n\n  div.appendChild(img);\n  div.appendChild(h1);\n  div.appendChild(para);\n};\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
 
 /***/ }),
 
@@ -26,7 +26,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _homepage_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homepage.js */ \"./src/homepage.js\");\n\n\nconst content = document.querySelector('div#content');\n\ncontent.appendChild((0,_homepage_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu.js */ \"./src/menu.js\");\n\n\n\n(0,_home_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n(0,_menu_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _pasta_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pasta.png */ \"./src/pasta.png\");\n\n\n/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__() {\n  const div = document.querySelector('div#content');\n\n  // Title\n  const h1 = document.createElement('h1');\n  h1.textContent = 'Menu';\n  div.appendChild(h1);\n\n  // Main Course\n  const h3 = document.createElement('h3');\n  h3.textContent = 'Main Course';\n  div.appendChild(h3);\n\n  // Food Item\n  const itemDiv = document.createElement('div');\n  const itemName = document.createElement('h5');\n  const itemDescrip = document.createElement('p');\n  const itemImg = document.createElement('img');\n  itemName.textContent ='Tomato Pasta';\n  itemDescrip.textContent = 'Aldente pasta with a bright tangy tomato sauce with italian flavors';\n  itemImg.src = _pasta_png__WEBPACK_IMPORTED_MODULE_0__;\n  itemDiv.appendChild(itemName);\n  itemDiv.appendChild(itemDescrip);\n  itemDiv.appendChild(itemImg);\n  div.appendChild(itemDiv);\n}\n\n//# sourceURL=webpack://restaurant-page/./src/menu.js?");
 
 /***/ }),
 
@@ -37,6 +47,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hom
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"1ac9095b202211c1ca48.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/icon.png?");
+
+/***/ }),
+
+/***/ "./src/pasta.png":
+/*!***********************!*\
+  !*** ./src/pasta.png ***!
+  \***********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"d44e341858984f2be007.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/pasta.png?");
 
 /***/ })
 
