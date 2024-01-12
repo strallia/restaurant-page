@@ -6,6 +6,7 @@ export default function (container) {
   const para = document.createElement('p');
   
   img.src = Icon;
+  img.classList.add('img');
   h1.textContent = 'Home';
   para.textContent = 'some random text';
 
