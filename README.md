@@ -2,4 +2,4 @@
 
 ## Purpose
 
-Use Webpack and DOM manipulation to create and dynamically render a restaurant homepage.
+Use Webpack, ES6 Modules, and DOM manipulation to create and dynamically render a restaurant homepage.
