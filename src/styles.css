@@ -7,3 +7,11 @@
 img {
   width: 200px;
 }
+
+button[data-status='inactive'] {
+  background-color: green;
+}
+
+button[data-status='active'] {
+  background-color: purple;
+}
