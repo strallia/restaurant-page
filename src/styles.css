@@ -4,28 +4,27 @@
   box-sizing: border-box;
   /* outline: 1px solid red; */
 }
-
 body {
   font-size: 16px;
+  min-width: 300px;
 }
-
 img {
   width: 200px;
 }
 
+/* HEADER */
 header {
   background-color: rgb(246, 207, 135);
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 5px;
 }
-
 nav {
   display: flex;
   gap: 20px;
 }
-
 nav > button {
   border-radius: 30px;
   border-width: 3px;
@@ -36,12 +35,59 @@ nav > button {
   width: 80px;
   padding: 8px 10px;
 }
-
 button[data-status='closed'] {
   box-shadow: 0 5px rgb(165, 125, 82);
   translate: 0 -3px;
 }
-
 button[data-status='open'] {
   border-color: rgb(91, 59, 24);
+}
+
+/* HOME PAGE */
+.welcome {
+  background-color: rgb(251, 245, 238);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: stretch;
+  justify-content: center;
+  gap: 20px;
+
+  > div:first-of-type {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+  }
+  > div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    gap: 20px;
+    text-align: center;
+  }
+}
+.bubble-section {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  
+  > div {
+    border: 3px solid orange;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgb(251, 245, 238);
+    width: 800px;
+    
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+    grid-template-columns: auto max-content;
+    align-items: center;
+
+    > h2 {
+      text-align: right;
+    }
+  }
 }
