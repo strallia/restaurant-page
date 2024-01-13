@@ -1,4 +1,4 @@
-# restaurant-page
+# Restaurant Page
 
 [Live Demo](https://strallia.github.io/restaurant-page/)
 

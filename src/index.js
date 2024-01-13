@@ -7,17 +7,20 @@ const container = document.querySelector('div#content');
 
 const tabs = document.querySelectorAll('nav > button');
 tabs.forEach((tab) => {
-  tab.addEventListener('click', (event) => renderContent(event.target));
+  tab.addEventListener('click', (event) => {
+    renderActiveTab(event.target)
+    renderContent(event.target);
+  });
 })
 
-function renderContent(activeTab) {
-  // render active tab
+function renderActiveTab(activeTab) {
   tabs.forEach((tab) => {
     tab.setAttribute('data-status', 'inactive');
   });
   activeTab.setAttribute('data-status', 'active');
+}
 
-  // render activeTab's content
+function renderContent(activeTab) {
   container.textContent = '';
   const tabValue = activeTab.getAttribute('data-value');
   switch(tabValue) {
@@ -31,3 +34,7 @@ function renderContent(activeTab) {
       renderContact(container);
   }; 
 }
+
+const homeTab = document.querySelector('button[data-value="home"]');
+renderActiveTab(homeTab);
+renderContent(homeTab);
