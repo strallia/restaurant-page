@@ -1,4 +1,4 @@
-import Pasta from './pasta.png';
+import Noodle from './noodle.png';
 
 export default function (container) {
   // Title
@@ -18,7 +18,7 @@ export default function (container) {
   const itemImg = document.createElement('img');
   itemName.textContent ='Tomato Pasta';
   itemDescrip.textContent = 'Aldente pasta with a bright tangy tomato sauce with italian flavors';
-  itemImg.src = Pasta;
+  itemImg.src = Noodle;
   itemDiv.appendChild(itemName);
   itemDiv.appendChild(itemDescrip);
   itemDiv.appendChild(itemImg);
