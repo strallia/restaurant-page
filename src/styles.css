@@ -2,16 +2,46 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+body {
+  font-size: 16px;
 }
 
 img {
   width: 200px;
 }
 
-button[data-status='inactive'] {
-  background-color: green;
+header {
+  background-color: rgb(246, 207, 135);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-button[data-status='active'] {
-  background-color: purple;
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav > button {
+  border-radius: 30px;
+  border-width: 3px;
+  border-style: solid;
+  font-size: 1rem;
+  background-color: lightpink;
+  border-color: rgb(165, 125, 82);
+  width: 80px;
+  padding: 8px 10px;
+}
+
+button[data-status='closed'] {
+  box-shadow: 0 5px rgb(165, 125, 82);
+  translate: 0 -3px;
+}
+
+button[data-status='open'] {
+  border-color: rgb(91, 59, 24);
 }

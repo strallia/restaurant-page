@@ -8,21 +8,21 @@ const container = document.querySelector('div#content');
 const tabs = document.querySelectorAll('nav > button');
 tabs.forEach((tab) => {
   tab.addEventListener('click', (event) => {
-    renderActiveTab(event.target)
+    renderOpenTab(event.target)
     renderContent(event.target);
   });
 })
 
-function renderActiveTab(activeTab) {
+function renderOpenTab(selectedTab) {
   tabs.forEach((tab) => {
-    tab.setAttribute('data-status', 'inactive');
+    tab.setAttribute('data-status', 'closed');
   });
-  activeTab.setAttribute('data-status', 'active');
+  selectedTab.setAttribute('data-status', 'open');
 }
 
-function renderContent(activeTab) {
+function renderContent(selectedTab) {
   container.textContent = '';
-  const tabValue = activeTab.getAttribute('data-value');
+  const tabValue = selectedTab.getAttribute('data-value');
   switch(tabValue) {
     case 'home':
       renderHome(container);
@@ -36,5 +36,5 @@ function renderContent(activeTab) {
 }
 
 const homeTab = document.querySelector('button[data-value="home"]');
-renderActiveTab(homeTab);
+renderOpenTab(homeTab);
 renderContent(homeTab);
