@@ -18,7 +18,7 @@ img {
 
 /* HEADER */
 header {
-  background-color: rgb(246, 207, 135);
+  background-color: rgb(250, 190, 105);
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -34,17 +34,17 @@ nav > button {
   border-width: 3px;
   border-style: solid;
   font-size: 1rem;
-  background-color: lightpink;
-  border-color: rgb(165, 125, 82);
+  background-color: rgb(117, 207, 53);
   width: 80px;
   padding: 8px 10px;
 }
 button[data-status='closed'] {
-  box-shadow: 0 5px rgb(165, 125, 82);
+  box-shadow: 0 5px rgb(95, 123, 75);
   translate: 0 -3px;
+  border-color: rgb(95, 123, 75);
 }
 button[data-status='open'] {
-  border-color: rgb(91, 59, 24);
+  border-color: rgb(109, 160, 72);
 }
 
 /* HOME PAGE */
@@ -125,6 +125,7 @@ button[data-status='open'] {
   border: 3px solid orange;
   border-radius: 20px;
   padding: 20px;
+  background-color: rgb(251, 245, 238);
 
   display: flex;
   flex-direction: column;
