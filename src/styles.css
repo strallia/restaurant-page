@@ -8,6 +8,9 @@ body {
   font-size: 16px;
   min-width: 300px;
 }
+.padding20 {
+  padding: 20px;
+}
 img {
   width: 200px;
 }
@@ -90,4 +93,37 @@ button[data-status='open'] {
       text-align: right;
     }
   }
+}
+
+/* MENU and CONTACT PAGES*/
+.menu-div,
+.items-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: stretch;
+  gap: 20px;
+
+  > div {
+    flex: 1;
+  }
+}
+.menu-div img {
+  width: 150px
+}
+.border-div {
+  border: 3px solid orange;
+  border-radius: 20px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.dish-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
