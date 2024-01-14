@@ -5,8 +5,6 @@ import IceCreams from './ice-creams.png';
 import HotChocolate from './hot-chocolate.png';
 import Milkshake from './milkshake.png';
 
-
-
 export default function (container) {
   const details = [
     {
