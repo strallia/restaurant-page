@@ -1,37 +1,55 @@
+import Baker from './baker.png';
+import Chef from './chef.png';
+import Waiter from './waiter.png';
+
 export default function (container) {
   class Person {
-    constructor(name, title, descrip) {
+    constructor(name, title, img) {
       this.name = name;
       this.title = title;
-      this.descrip = descrip;
+      this.img = img;
     }
   };
-
   const chef = new Person(
-    'Alex Moris', 
+    'Paws Culinaire', 
     'Head Chef', 
-    'Head chef specializing in italian dishes which he learned during his apprenticeship in Rome.'
+    Chef
   );
-
-  const manager = new Person(
-    'Emmy Landorf', 
-    'Manager', 
-    '10 years of experience managing food service business. Ready to deliver the best customer service.'
+  const baker = new Person(
+    'Whisker Kneads', 
+    'Head Baker', 
+    Baker
   );
+  const waiter = new Person(
+    'Meowster Tailington', 
+    'Waiter', 
+    Waiter
+  );
+  const employees = [chef, baker, waiter];
 
-  const employees = [chef, manager];
+  const contactDiv = document.createElement('div');
+  contactDiv.classList.add('contact-div');
 
   employees.forEach((person) => {
-    const h1 = document.createElement('h1');
-    h1.textContent = person.name;
-    container.appendChild(h1);
+    const borderDiv = document.createElement('div');
+    borderDiv.classList.add('border-div');
 
-    const title = document.createElement('h3');
-    title.textContent = person.title;
-    container.appendChild(title);
+    const h2 = document.createElement('h2');
+    h2.textContent = person.name;
 
-    const descrip = document.createElement('p');
-    descrip.textContent = person.descrip;
-    container.appendChild(descrip);
-  });
+    const para = document.createElement('p');
+    para.textContent = person.title;
+
+    const img = document.createElement('img');
+    img.src = person.img;
+
+    const arr = [h2, para, img];
+    arr.forEach((item) => {
+      borderDiv.appendChild(item);
+    });
+
+    contactDiv.appendChild(borderDiv);
+  })
+
+  container.appendChild(contactDiv);
 }

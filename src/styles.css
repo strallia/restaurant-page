@@ -95,7 +95,7 @@ button[data-status='open'] {
   }
 }
 
-/* MENU and CONTACT PAGES*/
+/* MENU PAGE*/
 .menu-div,
 .items-div {
   display: flex;
@@ -126,4 +126,18 @@ button[data-status='open'] {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+}
+
+/* CONTACT PAGE*/
+.contact-div {
+  padding: 20px;
+
+  display: flex;
+  gap: 20px;
+  justify-content: stretch;
+  flex-wrap: wrap;
+
+  > div {
+    flex: 1
+  }
 }
