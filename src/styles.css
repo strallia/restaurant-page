@@ -1,8 +1,16 @@
+@font-face {
+  font-family: 'Salsa';
+  src: url('./fonts/salsa.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Assistant';
+  src: url('./fonts/assistant.ttf') format('truetype');
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid red; */
+  font-family: 'Assistant', sans-serif;
 }
 body {
   font-size: 16px;
@@ -14,6 +22,12 @@ body {
 }
 img {
   width: 200px;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Salsa';
+  letter-spacing: 0.1em;
 }
 
 /* HEADER */
@@ -44,6 +58,7 @@ nav > button {
   width: 80px;
   padding: 8px 10px;
   height: min-content;
+  font-weight: bold;
 }
 button[data-status='closed'] {
   box-shadow: 0 5px rgb(95, 123, 75);
@@ -146,11 +161,18 @@ button[data-status='open'] {
   flex-direction: column;
   text-align: center;
   gap: 10px;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 
 /* CONTACT PAGE*/
 .contact-div {
   padding: 20px;
+  text-align: center;
 
   display: flex;
   gap: 20px;

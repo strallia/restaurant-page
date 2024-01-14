@@ -34,16 +34,16 @@ export default function (container) {
     const borderDiv = document.createElement('div');
     borderDiv.classList.add('border-div');
 
-    const h2 = document.createElement('h2');
-    h2.textContent = person.name;
+    const h1 = document.createElement('h1');
+    h1.textContent = person.name;
 
-    const para = document.createElement('p');
-    para.textContent = person.title;
+    const h3 = document.createElement('h3');
+    h3.textContent = person.title;
 
     const img = document.createElement('img');
     img.src = person.img;
 
-    const arr = [h2, para, img];
+    const arr = [h1, h3, img];
     arr.forEach((item) => {
       borderDiv.appendChild(item);
     });
