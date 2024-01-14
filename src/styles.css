@@ -8,9 +8,6 @@ body {
   font-size: 16px;
   min-width: 300px;
 }
-.padding20 {
-  padding: 20px;
-}
 img {
   width: 200px;
 }
@@ -114,8 +111,11 @@ button[data-status='open'] {
     flex: 1;
   }
 }
+.menu-div {
+  padding: 20px;
+}
 .menu-div img {
-  width: 150px
+  width: 125px;
 }
 .border-div {
   border: 3px solid orange;
@@ -133,6 +133,7 @@ button[data-status='open'] {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  gap: 10px;
 }
 
 /* CONTACT PAGE*/

@@ -55,7 +55,6 @@ export default function (container) {
       ], 
     }
   ];
-  container.classList.add('padding20');
 
   const menuDiv = document.createElement('div');
   menuDiv.classList.add('menu-div');
