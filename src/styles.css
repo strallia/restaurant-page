@@ -148,3 +148,25 @@ button[data-status='open'] {
     flex: 1
   }
 }
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+
+  > p {
+    flex: 1;
+    color:rgb(165, 125, 82);
+  }
+
+  a {
+    color: inherit;
+  }
+
+  a:visited {
+    color: inherit;
+  }
+}
