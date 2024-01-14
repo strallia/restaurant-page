@@ -94,6 +94,13 @@ button[data-status='open'] {
     }
   }
 }
+.photos-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 20px;
+}
 
 /* MENU PAGE*/
 .menu-div,

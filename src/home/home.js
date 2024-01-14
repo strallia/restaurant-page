@@ -1,4 +1,7 @@
 import Icon from './icon.png';
+import Hearts from './hearts.png';
+import Friends from './friends.png';
+import Sleepy from './sleepy.png';
 
 export default function (container) {
   // welcome section
@@ -28,8 +31,8 @@ export default function (container) {
     {
       title: 'Open Hours',
       text: [
-        "Monday - Friday : 10am - 6pm",
-        "Saturday - Sunday : 10am - 8pm"
+        "Mon - Fri: 10am - 6pm",
+        "Sat- Sun: 10am - 8pm"
       ]
     },
     {
@@ -57,6 +60,19 @@ export default function (container) {
   bubbleDiv.appendChild(borderDiv);
 
 
+  // photos section
+  const photosDiv = document.createElement('div');
+  photosDiv.classList.add('photos-div');
+
+  const photos = [Hearts, Friends, Sleepy];
+  photos.forEach((photo) => {
+    const img = document.createElement('img');
+    img.src = photo;
+    photosDiv.appendChild(img);
+  });
+
+
   container.appendChild(welcomeDiv);
   container.appendChild(bubbleDiv);
+  container.appendChild(photosDiv);
 };
